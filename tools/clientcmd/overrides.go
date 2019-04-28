@@ -165,7 +165,7 @@ func RecommendedConfigOverrideFlags(prefix string) ConfigOverrideFlags {
 		ClusterOverrideFlags: RecommendedClusterOverrideFlags(prefix),
 		ContextOverrideFlags: RecommendedContextOverrideFlags(prefix),
 
-		CurrentContext: FlagInfo{prefix + FlagContext, "", "", "The name of the kubeconfig context to use"},
+		CurrentContext: FlagInfo{prefix + FlagContext, "c", "", "The name of the kubeconfig context to use"},
 		Timeout:        FlagInfo{prefix + FlagTimeout, "", "0", "The length of time to wait before giving up on a single server request. Non-zero values should contain a corresponding time unit (e.g. 1s, 2m, 3h). A value of zero means don't timeout requests."},
 	}
 }
